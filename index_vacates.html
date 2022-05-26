@@ -98,10 +98,7 @@
 		var path = d3.geo.path()
 			.projection(projection);
 		
-		var fill = d3.scale.ordinal().range(['#1f77b4','#ff7f0e',
-          '#2ca02c', '#d62728','#9467bd','#e377c2',
-          '#bcbd22','#17becf'
-          ])
+		var fill = d3.scale.ordinal().range(['#e377c2','#9467bd','#d62728','#2ca02c','#ff7f0e','#1f77b4'])
         
         var svg = d3.select("#chart").append("svg")
             .attr("width", width)
